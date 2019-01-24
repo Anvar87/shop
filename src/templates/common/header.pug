@@ -1,10 +1,10 @@
-img.logo(src="../images/logo/logo.png", alt="")
+img.logo(src="../images/logo/logo.png", alt="").header__logo
 
-ul.main-menu
-    li.main-menu__item
+ul.main-menu.header__main-menu
+    li.main-menu__item.dropdown-hover
         a.main-menu__link(href="#") Men
-            span.icon-Right-copy-5.size-icon
-        .dropdown-content
+            span.icon-caret.size-icon
+        .dropdown-content.dropdown-arrow
             ul.dropdown-menu
                 li.dropdown-menu__item
                     a.dropdown-menu__link Bags
@@ -48,10 +48,10 @@ ul.main-menu
                     a.dropdown-menu__link Deserts & Chukkas
                 li.dropdown-menu__item
                     a.dropdown-menu__link Espadrilles & Sandals 
-    li.main-menu__item
+    li.main-menu__item.dropdown-hover
         a.main-menu__link(href="#") Women
-            span.icon-Right-copy-5.size-icon
-        .dropdown-content
+            span.icon-caret.size-icon
+        .dropdown-content.dropdown-arrow
             ul.dropdown-menu
                 li.dropdown-menu__item
                     a.dropdown-menu__link Bags
@@ -71,10 +71,10 @@ ul.main-menu
                     a.dropdown-menu__link Boots
                 li.dropdown-menu__item
                     a.dropdown-menu__link Deserts & Chukkas
-    li.main-menu__item
+    li.main-menu__item.dropdown-hover
         a.main-menu__link(href="#") Kids
-            span.icon-Right-copy-5.size-icon
-        .dropdown-content
+            span.icon-caret.size-icon
+        .dropdown-content.dropdown-arrow
             ul.dropdown-menu
                 li.dropdown-menu__item
                     a.dropdown-menu__link Bags
@@ -98,10 +98,10 @@ ul.main-menu
                     a.dropdown-menu__link Espadrilles & Sandals
                 li.dropdown-menu__item
                     a.dropdown-menu__link Flip Flops
-    li.main-menu__item
+    li.main-menu__item.dropdown-hover
         a.main-menu__link(href="#") Accessories
-            span.icon-Right-copy-5.size-icon
-        .dropdown-content
+            span.icon-caret.size-icon
+        .dropdown-content.dropdown-arrow
             ul.dropdown-menu
                 li.dropdown-menu__item
                     a.dropdown-menu__link Bags
@@ -134,11 +134,97 @@ ul.main-menu
     li.main-menu__item
         a.main-menu__link(href="#") Blog
 
-.search
+.search.header__search
     form(action="#")
         input(type="text", placeholder="Search").form-control.search__input
-        input(type="submit", value!="&#xe907;").search__button
+        input(type="submit", value!="&#xe90b;").search__button
 
 .location
-    span.icon-location-pin-copy.size-pin
+    span.icon-pin.size-pin
     a(href="#").location__link Uzbekistan / $
+ul.profile-menu.header__profile-menu
+    li.profile-menu__item.dropdown-hover.dropdown-hover_right.dropdown-hover_white
+        a(href="#").profile-menu__link
+            span.basket
+                span.icon-bag.size-user
+                span.badge.basket__badge 3
+            span.b-price $165
+        .dropdown-content.dropdown-arrow
+            .cart
+                ul.cart-list
+                    li.cart-list__item
+                        .cart-list__img
+                            a(href="#")
+                                img(src="../images/bg/cart-img.png", alt="")
+                        .product-name
+                            h6.product-name__info
+                                a(href="#") New Balance Men's Street Backpack
+                            .product-details
+                                span.price $485
+                                span.product-size
+                                    span S 
+                                    span Black 
+                                    span 1 pcs
+                        .cart-list__delet
+                            a(href="#").js-remove-cart
+                                span.icon-uniE914
+                    li.cart-list__item
+                        .cart-list__img
+                            a(href="#")
+                                img(src="../images/bg/cart-img-2.png", alt="")
+                        .product-name
+                            h6.product-name__info
+                                a(href="#") New Balance Men's Street Backpack
+                            .product-details
+                                span.price $485
+                                span.product-size
+                                    span XXL 
+                                    span White 
+                                    span 3 pcs
+                        .cart-list__delet
+                            a(href="#").js-remove-cart
+                                span.icon-uniE914
+                    li.cart-list__item
+                        .cart-list__img
+                            a(href="#")
+                                img(src="../images/bg/cart-img-1.png", alt="")
+                        .product-name
+                            h6.product-name__info
+                                a(href="#") New Balance Men's Street Backpack
+                            .product-details
+                                span.price $485
+                                span.product-size
+                                    span M 
+                                    span Orange 
+                                    span 89 pcs
+                        .cart-list__delet
+                            a(href="#").js-remove-cart
+                                span.icon-uniE914
+                .cart-footer
+                    span.total.product-size Tolal
+                    span.price $3 285
+                    a(href="#").btn Check Out
+
+    li.profile-menu__item.dropdown-hover.dropdown-hover_right.dropdown-hover_white
+        a(href="#").profile-menu__link
+            span.icon-user.size-user
+        .dropdown-content.dropdown-arrow
+            ul.user-menu
+                li.user-menu__item
+                    span.icon-user.size-basktet
+                    a.user-menu__link Profile
+                li.user-menu__item
+                    span.icon-heart.size-basktet
+                    a.user-menu__link Wishlist
+                    span.badge.user-menu__badge 2
+                li.user-menu__item
+                    span.icon-basket.size-basktet
+                    a.user-menu__link Order
+                li.user-menu__item
+                    span.icon-gear.size-basktet
+                    a.user-menu__link Setting
+                li.user-menu__item
+                    span.icon-power.size-basktet
+                    a.user-menu__link Log out
+               
+            

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('./fonts/icomoon.eot?9f0xyr');
-  src:  url('./fonts/icomoon.eot?9f0xyr#iefix') format('embedded-opentype'),
-    url('./fonts/icomoon.ttf?9f0xyr') format('truetype'),
-    url('./fonts/icomoon.woff?9f0xyr') format('woff'),
-    url('./fonts/icomoon.svg?9f0xyr#icomoon') format('svg');
+  src:  url('./fonts/icomoon.eot?2jrkw3');
+  src:  url('./fonts/icomoon.eot?2jrkw3#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?2jrkw3') format('truetype'),
+    url('./fonts/icomoon.woff?2jrkw3') format('woff'),
+    url('./fonts/icomoon.svg?2jrkw3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,19 +24,78 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bag-copy-4:before {
+.icon-arrow-right:before {
+  content: "\e900";
+}
+.icon-caret:before {
   content: "\e901";
 }
-.icon-location-pin-copy:before {
+.icon-data-transmission-bottom:before {
+  content: "\e902";
+}
+.icon-heart-plus:before {
+  content: "\e903";
+}
+.icon-uniE904:before {
   content: "\e904";
 }
-.icon-Right-copy-5:before {
+.icon-uniE905:before {
   content: "\e905";
-  color: #1f4ba5;
 }
-.icon-search-copy-4:before {
+.icon-menu:before {
+  content: "\e906";
+}
+.icon-minus:before {
   content: "\e907";
 }
-.icon-user-copy-11:before {
+.icon-pin:before {
   content: "\e908";
+}
+.icon-plus:before {
+  content: "\e909";
+}
+.icon-reload:before {
+  content: "\e90a";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-sliders:before {
+  content: "\e90c";
+}
+.icon-user:before {
+  content: "\e90d";
+}
+.icon-uniE90E:before {
+  content: "\e90e";
+}
+.icon-uniE90F:before {
+  content: "\e90f";
+}
+.icon-list-2:before {
+  content: "\e910";
+}
+.icon-list:before {
+  content: "\e911";
+}
+.icon-bag:before {
+  content: "\e912";
+}
+.icon-basket:before {
+  content: "\e913";
+}
+.icon-uniE914:before {
+  content: "\e914";
+}
+.icon-uniE915:before {
+  content: "\e915";
+}
+.icon-gear:before {
+  content: "\e916";
+}
+.icon-heart:before {
+  content: "\e917";
+}
+.icon-power:before {
+  content: "\e918";
 }

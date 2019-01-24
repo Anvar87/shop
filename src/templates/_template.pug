@@ -1,0 +1,28 @@
+block variables
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(content="" name="author")
+    meta(name="description", content=`${desc}`)
+    meta(content="" name="keywords")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    //- подтверждение сайта old
+    meta(name="google-site-verification" content="YRhyqf1mRc1M7Wj6v08lYUCiEeqS_c_cVzK_ADIdkg0")
+
+    //- favicon block start
+    link(rel="icon", href="./images/favicon/favicon.ico", attr="favicon")
+    //- favicon block end
+    link(rel='stylesheet' href='styles/main.min.css')
+    script(src='scripts/bundle.js' defer)
+
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+
+  body
+    .wrapper
+      block content

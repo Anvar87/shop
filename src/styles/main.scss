@@ -1,0 +1,28 @@
+
+// colors
+$color: #222222;
+$bgcolor: #ffffff;
+$grey1: #868686;
+$grey2: #979797;
+// fonts
+@import url(//db.onlinewebfonts.com/c/87031186eab6d724cba6116f1e0dd8b0?family=FuturaRoundW01-Bold);
+
+//-roboto
+$varela: Varela Round;
+
+//-Oswald
+$oswald: Oswald;
+$font-size: 14px;
+// reset css
+@import 'common/normalize';
+// fonts
+@import 'fonts/stylesheet';
+@import 'fonts/icomoon';
+// fontsawesome
+
+// sections
+@import 'common/base';
+@import 'common/header';
+// pages
+@import 'pages/index';
+@import 'pages/test';

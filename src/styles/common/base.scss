@@ -1,0 +1,37 @@
+$laptop: 1024px;
+$ipad: 768px;
+$phone: 320px;
+
+@mixin laptop() {
+    @media screen and (max-width: $laptop) {
+        @content;
+    }
+}
+
+@mixin ipad() {
+    @media screen and (max-width: $ipad) {
+        @content;
+    }
+}
+
+@mixin phone() {
+    @media screen and (max-width: $phone) {
+        @content;
+    }
+}
+
+body {
+    font: 14px/1.46 Varela Round, Arial sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    min-height: 600px;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+}

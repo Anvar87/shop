@@ -16,3 +16,16 @@ let funcName = () => {
 funcName();
 
 module.exports = funcName;
+
+
+$(function(){
+
+	$('.tabs a').click(function(){
+		$(this).parents('.tabWrap').find('.tabCount').addClass('hideTabs');
+		$(this).parent().siblings().removeClass('active');
+		var id = $(this).attr('href');
+		$(id).removeClass('hideTabs');
+		$(this).parent().addClass('active');
+		return false
+  });  
+});

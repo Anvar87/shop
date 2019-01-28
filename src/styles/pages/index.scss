@@ -1,0 +1,222 @@
+.wrapper {
+    &__headerInner {
+        position: relative;
+    }
+}
+
+.headerInner {
+    background: url(../../images/bg/header-inner.png);
+    background-position: right top;
+    height: 181px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__category {
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    &__categoryTitle {
+        padding-bottom: 20px;
+    }
+}
+
+.headerInner-title {
+    font-family: $varela, sans-serif;
+    font-size: 48px;
+    color: $color;
+    line-height: 50px;
+}
+
+
+.category {
+    list-style: none;
+    display: flex;
+}
+
+.categoryLink {
+  text-decoration: none;
+  font-family: $varela, sans-serif;
+  font-size: 12px;
+  color: $grey1;
+}
+
+.categoryTitle {
+    text-transform: uppercase;
+    font-family: $oswald, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: $blue;
+}
+
+.filter {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    min-height: 60px;
+
+    &__filterSidebar {   
+        padding: 22px 30px;
+    }
+}
+
+.filterSidebar {
+    display: flex;
+    width: 180px;
+    border-right: 1px solid #ececec;
+    align-items: center;
+    &__sidebarBtn {
+        margin-right: 20px;
+    }
+}
+
+.sidebarBtn {
+    color: #d5d5d5;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    transition: all 0.3s;
+    &_text {
+        display: none;
+    }
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.sidebarFound {
+    font-family: $varela;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: left;
+    color: $grey2;
+}
+
+.filterContent {
+    display: flex;
+    flex: 1;
+    padding: 15px 30px;
+    align-items: center;
+    &__filterList {
+        margin-left: auto;
+    }
+}
+
+.sort {
+    display: flex;
+    
+    position: relative;
+    overflow: hidden;
+    &__sortInput {
+        position: absolute;
+        left: -999px;
+    }
+    
+}
+
+.sortInput:checked + .sortLable {
+    background-color: $color;
+    padding: 0 20px;
+    border-radius: 20px;
+    color: #fffefe;
+    .sortIcon {
+        color: #ffffff;
+    }
+}
+
+.sortLable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $varela;
+    height: 30px;
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: left;
+    color: $color;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sortIcon {
+    color: #d5d5d5;
+    font-size: 12px;
+}
+
+.filterList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &__filterList-item {
+        margin-left: 10px;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &.active .filterList-link {
+            color: $color;
+        }
+    }
+
+    
+}
+
+
+.filterList-link {
+    font-size: 16px;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #d5d5d5;
+    &:hover {
+        color: #888;
+    }
+}
+
+.hideTabs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.tabCount {
+    opacity: 1;
+    transition: opacity 0.4s;
+    visibility: visible;
+    .hideTabs {
+        opacity: 0;
+    }
+}
+
+.boxMain {
+    display: flex;
+
+    &__sidebar {
+        padding: 26px 30px;
+    }
+}
+
+.sidebar {
+    flex: none;
+    width: 180px;
+    border-right: 1px solid #ececec;
+}
+
+.content {
+    flex: 1;
+}
